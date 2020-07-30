@@ -4,10 +4,10 @@
         <nav>
             <ul>
                 <li><img src="../assets/logo.svg" alt="logo"></li>
-                <li><router-link id="router-link-home">home</router-link></li>
-                <li><router-link>contact</router-link></li>
-                <li><router-link>about</router-link></li>
-                <li><router-link>log in</router-link></li>                                                           
+                <li><router-link to="/" class="main-nav-router-link active-router-link">home</router-link></li>
+                <li><router-link to="/contact" class="main-nav-router-link">contact</router-link></li>
+                <li><router-link to="/about" class="main-nav-router-link">about</router-link></li>
+                <li><router-link to="/login" class="main-nav-router-link">log in</router-link></li>                                                           
             </ul>
         </nav>
     </div>    
@@ -41,17 +41,18 @@
             align-items: center;
             li {                    
                 cursor: pointer;  
-                router-link {
+                .main-nav-router-link {
                     font-size: 1em; 
                     margin-left: 5vw;
                     color: white;
                     &:hover {
                         font-style: italic;
                     }
+                    text-decoration: none;
                 }
-                #router-link-home {
+                .active-router-link {
                     color: #FFBFBF;
-                }                                               
+                }                                        
             }
         }
     }
