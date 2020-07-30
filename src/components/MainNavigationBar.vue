@@ -31,6 +31,7 @@
     nav {
         position: fixed;
         height: 15vh;
+        width: 100vh;
         display: flex;
         align-items: center;
         ul {
