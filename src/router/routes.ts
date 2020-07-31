@@ -1,8 +1,8 @@
 
 import HomePage from '../components/HomePage.vue'
-import UserListsPanel from '../components/UserListsPanel.vue'
+import UserPage from '../components/UserPage.vue'
 
 export const routes = [
     { path: "/", component: HomePage },
-    { path: "/user", component: UserListsPanel },
+    { path: "/user", component: UserPage },
 ]

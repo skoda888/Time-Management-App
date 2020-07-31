@@ -1,20 +1,17 @@
 
 <template>
     <div>
-        <router-view></router-view>
-    </div>    
+        
+    </div>
 </template>
 
 
 <script lang="ts">
     import Vue from 'vue'
     import Component from 'vue-class-component'
-    import HomePage from './components/HomePage.vue'
 
     @Component({
-        components: {
-            'home-page': HomePage,
-        }
+
     })
     export default class App extends Vue {
 

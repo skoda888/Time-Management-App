@@ -1,26 +1,25 @@
 
 <template>
     <div>
-        <router-view></router-view>
-    </div>    
+        <main-navigation-bar></main-navigation-bar>
+        <list-container></list-container>
+    </div>
 </template>
-
 
 <script lang="ts">
     import Vue from 'vue'
     import Component from 'vue-class-component'
-    import HomePage from './components/HomePage.vue'
+    import ListContainer from './ListContainer.vue'
 
     @Component({
         components: {
-            'home-page': HomePage,
+            'list-container': ListContainer
         }
     })
     export default class App extends Vue {
 
     }
 </script>
-
 
 <style lang="scss" scoped>
 
