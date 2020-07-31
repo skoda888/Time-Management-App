@@ -1,4 +1,4 @@
 
 <template>
-    <h1>USER</h1>
+    <main-navigation-bar></main-navigation-bar>
 </template>

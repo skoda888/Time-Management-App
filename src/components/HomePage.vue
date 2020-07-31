@@ -6,7 +6,7 @@
         <section id="landing-page">
             <img src="../assets/img-laptop.jpg" alt="laptop">
             <h1>TIME IS PRICELESS. MANAGE IT.</h1>
-            <button>Get Started</button>
+            <router-link to="/user" tag="button">Get Started</router-link>
         </section>
 
         <section id="about-page">
@@ -18,12 +18,8 @@
 <script lang="ts">
     import Vue from 'vue'
     import Component from 'vue-class-component'
-    import MainNavigationBar from './MainNavigationBar.vue'
 
     @Component({
-        components: {
-            'main-navigation-bar': MainNavigationBar,
-        }
     })
     export default class MyComponent extends Vue {
 
