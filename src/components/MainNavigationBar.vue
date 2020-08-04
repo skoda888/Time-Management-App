@@ -21,7 +21,7 @@
     @Component({
           
     })
-    export default class MyComponent extends Vue {
+    export default class MainNavigationBar extends Vue {
 
     }
 </script>
@@ -30,6 +30,8 @@
 <style lang="scss" scoped>
     nav {
         position: fixed;
+        top: 0;
+        left: 0;
         height: 15vh;
         width: 100vh;
         display: flex;
@@ -44,7 +46,7 @@
                 .main-nav-router-link {
                     font-size: 1em; 
                     margin-left: 5vw;
-                    color: white;
+                    color: #DAD4D4;
                     &:hover {
                         font-style: italic;
                     }

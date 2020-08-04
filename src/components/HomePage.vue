@@ -1,14 +1,12 @@
 
 <template>
     <div>
-        <main-navigation-bar></main-navigation-bar>
-
         <section id="landing-page">
             <img src="../assets/img-laptop.jpg" alt="laptop">
             <h1>TIME IS PRICELESS. MANAGE IT.</h1>
             <router-link to="/user" tag="button">Get Started</router-link>
         </section>
-
+        
         <section id="about-page">
         </section>
     </div>    
@@ -21,7 +19,7 @@
 
     @Component({
     })
-    export default class MyComponent extends Vue {
+    export default class HomePage extends Vue {
 
     }
 </script>
@@ -44,7 +42,6 @@
             position: absolute;
             text-align: right;
             font-size: 5.5em;
-            font-weight: 100;
             color: #DAD4D4;
             width: 60%;
             top: 50.5%;
