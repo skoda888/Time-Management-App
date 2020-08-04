@@ -1,6 +1,6 @@
 
-import HomePage from '../components/HomePage.vue'
-import UserPage from '../components/UserPage.vue'
+import HomePage from '../views/HomePage.vue'
+import UserPage from '../views/UserPage.vue'
 
 export const routes = [
     { path: "/", component: HomePage },
