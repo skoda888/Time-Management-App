@@ -23,6 +23,8 @@
     #to-do-list-item {
         width: 13vw;
         height: 8vh;
-        background-color: turquoise;
+        background-color: yellowgreen;
+        border-radius: 20px;
+        overflow: hidden;
     }   
 </style>
