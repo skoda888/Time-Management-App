@@ -14,7 +14,7 @@
                 <button class="no-fill-and-round-border" v-on:click="isNewTaskFormDisplayed = true">+ Add new task</button>
             </section>
 
-            <new-task-form></new-task-form>
+            <new-task-form v-if="isNewTaskFormDisplayed == true" v-on:taskConfigurationSet="setNewTaskTitle($event)"></new-task-form>
         </div>
     </div>
 </template>
@@ -38,6 +38,13 @@ import NewTaskForm from './NewTaskForm.vue'
             // { id: 2, title: "Help my lil bro", dueTime: "2020/08/09" },
             // { id: 3, title: "Take a walk", dueTime: "2020/08/06" }
         ]
+
+        setNewTaskTitle(event: string): void 
+        {
+            const tasksLength: number = this.example_tasks.length
+            this.example_tasks.push({ id: (tasksLength + 1), title: event, dueTime: "today"});
+            this.isNewTaskFormDisplayed = false
+        }
     }
 </script>
 
