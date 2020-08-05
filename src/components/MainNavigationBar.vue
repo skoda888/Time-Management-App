@@ -35,7 +35,7 @@
         top: 0;
         left: 0;
         height: 15vh;
-        width: 100vw;
+        width: 100vwl;
         display: flex;
         align-items: center;
         background-color: $darkgray;

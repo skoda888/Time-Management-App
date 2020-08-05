@@ -3,7 +3,7 @@
         <div id="to-do-list-container">
             <h3>TO DO</h3>
             <ul>
-                <li><to-do-list-item></to-do-list-item></li>
+                <li v-for="task in example_tasks" v-bind:key="task.id"><to-do-list-item v-bind:text="task.text"></to-do-list-item></li>
             </ul>
         </div>
     </div>
@@ -20,7 +20,11 @@
         }
     })
     export default class ToDoListContainer extends Vue {
-
+        example_tasks = [
+            { id: 1, text: "Do the groceries", dueTime: "2020/08/05" },
+            // { id: 2, text: "Help my lil bro", dueTime: "2020/08/09" },
+            // { id: 3, text: "Take a walk", dueTime: "2020/08/06" }
+        ]
     }
 </script>
 
