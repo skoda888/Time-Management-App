@@ -21,9 +21,9 @@
     @import '../../scss/variables.scss';
 
     #to-do-list-item {
+        background-color: $darkgray;
         width: 13vw;
         height: 8vh;
-        background-color: yellowgreen;
         border-radius: 20px;
         overflow: hidden;
     }   

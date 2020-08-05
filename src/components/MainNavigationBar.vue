@@ -28,14 +28,17 @@
 
 
 <style lang="scss" scoped>
+    @import '../scss/variables.scss';
+
     nav {
         position: fixed;
         top: 0;
         left: 0;
         height: 15vh;
-        width: 100vh;
+        width: 100vw;
         display: flex;
         align-items: center;
+        background-color: $darkgray;
         ul {
             margin-left: 3vw;
             display: flex;

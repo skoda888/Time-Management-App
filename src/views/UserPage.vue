@@ -1,7 +1,6 @@
 
 <template>
-    <div>
-        <main-navigation-bar></main-navigation-bar>
+    <div id="user-page">
         <h1>Today</h1>
         <to-do-list-container id="initial-to-do-list-container"></to-do-list-container>
     </div>
@@ -23,11 +22,15 @@
 </script>
 
 <style lang="scss" scoped>
-    div {
+    @import '../scss/variables.scss';
+    #user-page {
+        width: 100%;
+        height: 100vh;
+        background-color: $darkgray;
         $left-indentation: 15vh;
         h1 {    
             margin-left: $left-indentation;
-            margin-top: 20vh;
+            padding-top: 20vh;
             color: white;
         }
         #initial-to-do-list-container {

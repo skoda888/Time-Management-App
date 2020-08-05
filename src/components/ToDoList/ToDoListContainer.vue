@@ -29,7 +29,7 @@
 
     #to-do-list-container {
         background-color: $pink;
-        height: 30vh;
+        height: $list-container-initial-height;
         width: $list-container-width;
     }
     h3 {

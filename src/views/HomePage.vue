@@ -26,6 +26,12 @@
 
 
 <style lang="scss" scoped>
+    @import '../scss/variables.scss';
+
+    div {
+        background-color: $darkgray;
+    }
+
     #landing-page {
         height: 100vh;
         width: 100%;
