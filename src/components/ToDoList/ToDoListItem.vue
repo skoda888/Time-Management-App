@@ -2,7 +2,7 @@
 <template>
     <div>
         <div id="to-do-list-item">
-            <h4>{{ text }}</h4>
+            <p>{{ title }}</p>
         </div>
     </div>
 </template>
@@ -14,19 +14,24 @@
 
     @Component({})
     export default class ToDoListItem extends Vue {
-        @Prop({default: 'Empty task'}) text!: string
+        @Prop({default: 'Empty task'}) title!: string
     }
 </script>
 
 <style lang="scss" scoped>
-    @import '../../scss/variables.scss';
-
     #to-do-list-item {
         background-color: $darkgray;
-        color: $white;
-        width: 13vw;
-        height: 8vh;
+        color: white;
+        width: calc(#{$list-container-width} - 2vw);
+        height: 10vh;
         border-radius: 20px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
     }   
+    p {
+        max-width: calc(#{$list-container-width} - 7vw);
+        margin-left: 2vw;
+        font-weight: bold;
+    }
 </style>

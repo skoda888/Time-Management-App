@@ -22,12 +22,11 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '../scss/variables.scss';
     #user-page {
         width: 100%;
         height: 100vh;
         background-color: $darkgray;
-        $left-indentation: 15vh;
+        $left-indentation: 18vh;
         h1 {    
             margin-left: $left-indentation;
             padding-top: 20vh;

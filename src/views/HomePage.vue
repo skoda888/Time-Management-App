@@ -26,8 +26,6 @@
 
 
 <style lang="scss" scoped>
-    @import '../scss/variables.scss';
-
     div {
         background-color: $darkgray;
     }

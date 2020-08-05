@@ -28,8 +28,6 @@
 
 
 <style lang="scss" scoped>
-    @import '../scss/variables.scss';
-
     nav {
         position: fixed;
         top: 0;
