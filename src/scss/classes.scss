@@ -1,0 +1,12 @@
+.button-no-background-pink-border {
+    background-color: transparent;
+    color: #FFBFBF; 
+    border: 1.5px solid #FFBFBF;
+    outline: none;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    &:hover {
+        background-color: #FFBFBF;
+        color: #2A2A2A;
+    }
+}

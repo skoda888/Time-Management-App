@@ -14,7 +14,7 @@
                 <button class="no-fill-and-round-border" v-on:click="isNewTaskFormDisplayed = true">+ Add new task</button>
             </section>
 
-
+            <new-task-form></new-task-form>
         </div>
     </div>
 </template>
@@ -23,10 +23,12 @@
     import Vue from "vue"
     import Component from "vue-class-component"
     import ToDoListItem from "./ToDoListItem.vue"
+import NewTaskForm from './NewTaskForm.vue'
 
     @Component({
         components: {
-            'to-do-list-item': ToDoListItem
+            'to-do-list-item': ToDoListItem,
+            'new-task-form': NewTaskForm
         }
     })
     export default class ToDoListContainer extends Vue {
