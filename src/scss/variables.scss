@@ -11,3 +11,7 @@ $list-container-initial-height: 30vh;
 
 // sources
 $logo-src: '../assets/logo.svg';
+
+:export {
+    $list-container-initial-height: list-container-initial-height
+}

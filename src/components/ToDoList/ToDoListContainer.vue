@@ -5,7 +5,7 @@
                 <h3>TO DO</h3>
             </section>
 
-            <section id="to-do-list-container-body">
+            <section id="to-do-list-container-body" v-bind:style="{ height: '30vh + ' }">
                 <ul>
                     <li v-for="task in example_tasks" v-bind:key="task.id">
                         <to-do-list-item v-bind:title="task.title"></to-do-list-item>
@@ -15,6 +15,7 @@
             </section>
 
             <new-task-form v-if="isNewTaskFormDisplayed == true" v-on:taskConfigurationSet="setNewTaskTitle($event)"></new-task-form>
+
         </div>
     </div>
 </template>
@@ -23,7 +24,8 @@
     import Vue from "vue"
     import Component from "vue-class-component"
     import ToDoListItem from "./ToDoListItem.vue"
-import NewTaskForm from './NewTaskForm.vue'
+    import NewTaskForm from './NewTaskForm.vue'
+    // import scssVariables from '../../scss/variables.scss'  
 
     @Component({
         components: {
@@ -32,6 +34,7 @@ import NewTaskForm from './NewTaskForm.vue'
         }
     })
     export default class ToDoListContainer extends Vue {
+        // Data
         isNewTaskFormDisplayed = false
         example_tasks = [
             { id: 1, title: "Do the groceries and don't forget to buy apples and almonds", dueTime: "2020/08/05" },
@@ -39,6 +42,12 @@ import NewTaskForm from './NewTaskForm.vue'
             // { id: 3, title: "Take a walk", dueTime: "2020/08/06" }
         ]
 
+        // Computed Properties
+        // get currentListContainerHeight() {
+        //     //return 30 + (this.example_tasks.length());
+        // }
+
+        // Methods
         setNewTaskTitle(event: string): void 
         {
             const tasksLength: number = this.example_tasks.length
@@ -51,7 +60,7 @@ import NewTaskForm from './NewTaskForm.vue'
 <style lang="scss" scoped>
     #to-do-list-container {
         background-color: $pink;
-        height: $list-container-initial-height;
+        //height: $list-container-initial-height;
         width: $list-container-width;
     }
 
