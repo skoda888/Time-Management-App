@@ -48,7 +48,7 @@
             font-size: 5.5em;
             color: #DAD4D4;
             width: 60%;
-            top: 50.5%;
+            top: 50.7%;
             left: 8%;
             letter-spacing: 0.3vw;
         }
@@ -56,8 +56,8 @@
             background-color: transparent;
             position: absolute;
             padding: 2vh 7vw;
-            color: #FFBFBF; 
-            border: 1.5px solid #FFBFBF;
+            color: $pink; 
+            border: 1.5px solid $pink;
             font-size: 1.15em;
             top: 82%;
             left: 47.5%;
@@ -65,7 +65,7 @@
             transition: 0.3s ease-in;
             cursor: pointer;
             &:hover {
-                background-color: #FFBFBF;
+                background-color: $pink;
                 color: #2A2A2A;
             }
         }

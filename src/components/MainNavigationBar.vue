@@ -33,7 +33,7 @@
         top: 0;
         left: 0;
         height: 15vh;
-        width: 100vwl;
+        width: 100vw;
         display: flex;
         align-items: center;
         background-color: $darkgray;
@@ -54,7 +54,7 @@
                     text-decoration: none;
                 }
                 .active-router-link {
-                    color: #FFBFBF;
+                    color: $pink;
                 }                                        
             }
         }

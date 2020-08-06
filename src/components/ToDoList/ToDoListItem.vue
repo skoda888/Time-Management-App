@@ -3,6 +3,7 @@
     <div>
         <div id="to-do-list-item">
             <p>{{ title }}</p>
+            <input type="checkbox">
         </div>
     </div>
 </template>
@@ -34,4 +35,9 @@
         margin-left: 2vw;
         font-weight: bold;
     }
+    input[type=checkbox] {
+        display: block;
+        margin-left: 1vw;
+    }
+
 </style>

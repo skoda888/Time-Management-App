@@ -25,7 +25,8 @@
     #user-page {
         width: 100%;
         height: 100vh;
-        background-color: $darkgray;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../src/assets/img-laptop-woman.jpg');
+        background-size: cover;
         $left-indentation: 18vh;
         h1 {    
             margin-left: $left-indentation;
