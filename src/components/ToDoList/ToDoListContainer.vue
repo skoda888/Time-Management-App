@@ -5,7 +5,7 @@
                 <h3>TO DO</h3>
             </section>
 
-            <section id="to-do-list-container-body" v-bind:style="{ height: '30vh + ' }">
+            <section id="to-do-list-container-body">
                 <ul>
                     <li v-for="task in example_tasks" v-bind:key="task.id">
                         <to-do-list-item v-bind:title="task.title"></to-do-list-item>
@@ -43,9 +43,9 @@
         ]
 
         // Computed Properties
-        // get currentListContainerHeight() {
-        //     //return 30 + (this.example_tasks.length());
-        // }
+        get currentListContainerHeight() {
+            return 6 + (this.example_tasks.length) * 20;
+        }
 
         // Methods
         setNewTaskTitle(event: string): void 
@@ -60,7 +60,6 @@
 <style lang="scss" scoped>
     #to-do-list-container {
         background-color: $pink;
-        //height: $list-container-initial-height;
         width: $list-container-width;
     }
 
@@ -80,6 +79,7 @@
         background-color: transparent;
         list-style-type: none;
         display: flex;
+        flex-direction: column;
         margin-top: 2vh;
         li {
             margin: 1vh auto;
@@ -91,9 +91,12 @@
         height: 6vh;
         border: 2px solid $darkgray;
         border-radius: 30px;
-        margin-top: 2vh;
         background-color: transparent;
         font-size: 1em;
         cursor: pointer;
+    }
+    button {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
     }
 </style>
